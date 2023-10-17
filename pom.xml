@@ -76,6 +76,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>com/adrain/adrainspringboottest/entity/**</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
