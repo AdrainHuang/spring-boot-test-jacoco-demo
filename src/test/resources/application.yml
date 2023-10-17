@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb  # 使用H2内存数据库，您可以根据需要替换为其他数据库
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true  # 启用H2控制台，方便调试
+  jpa:
+    hibernate:
+      ddl-auto: update  # 自动更新数据库架构
+    show-sql: true  # 显示SQL查询，方便调试
+
+server:
+  port: 8085  # 应用程序将运行在8080端口
